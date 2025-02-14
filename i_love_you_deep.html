@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You, Deep</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffe6f2;
+            font-family: 'Indie Flower', cursive;
+        }
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: #ff3366;
+            font-size: 3rem;
+            animation: pop 1s infinite alternate;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 20px auto;
+            animation: heartbeat 1s infinite;
+        }
+        .heart:before, .heart:after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart:before { top: -50px; left: 0; }
+        .heart:after { left: 50px; top: 0; }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1) rotate(-45deg); }
+            50% { transform: scale(1.2) rotate(-45deg); }
+        }
+        @keyframes pop {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <h1>I Love You, Deep! 💖</h1>
+    <div class="heart"></div>
+    <p>Every moment with you is special, and I want to spend forever with you. Will you be mine? 💘</p>
+    <p>You mean the world to me, and I can't imagine my life without you. Happy Valentine's Day! 💞</p>
+</body>
+</html>
